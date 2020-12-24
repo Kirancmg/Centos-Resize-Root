@@ -1,0 +1,7 @@
+To Resize Centos /root, /var and /usr
+
+Step 1: Run the below command lvextend -L +100G /dev/vg00/usr resize2fs /dev/vg00/usr
+
+Step 2: lvextend -L +100G /dev/vg00/var resize2fs /dev/vg00/var
+
+Step 3: lvextend -L +100G /dev/vg00/home resize2fs /dev/vg00/home
